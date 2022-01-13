@@ -59,6 +59,13 @@ h1 {
   line-height: 120%;
 }
 
+h2 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 43px;
+  line-height: 130%;
+}
+
 h2,
 h3,
 h4,
@@ -203,9 +210,232 @@ h5 {
 }
 
 .header__text {
-  font-weight: 600;
+  font-weight: 500;
   font-size: 20px;
   line-height: 160%;
   margin: 26px 0 48px;
+  opacity: 0.8;
+}
+
+.best {
+  margin: 140px 0;
+}
+
+.best__text {
+  width: 506px;
+  font-size: 18px;
+  line-height: 160%;
+  opacity: 0.7;
+  margin: 20px 0 60px;
+}
+
+.best__slider {
+  width: 100%;
+}
+
+.best__slider button {
+  background-color: transparent;
+  border: none;
+  position: absolute;
+  right: 0;
+  top: -170px;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  cursor: pointer;
+}
+
+.best__slider button:hover {
+  opacity: 0.6;
+}
+
+.best__slider .slick-prev {
+  right: 66px;
+}
+
+.best__slider-item span {
+  display: inline-block;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  margin-right: 5px;
+}
+
+.best__slider-item p {
+  font-size: 16px;
+  line-height: 160%;
+  color: #000000;
+  opacity: 0.6;
+  width: 257px;
+  margin: 15px 0 34px;
+}
+
+.best__slider-item a {
+  display: inline-block;
+  color: #fff;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 150%;
+}
+
+.best__slider-price {
+  display: inline-block;
+  font-family: "Josefin Sans", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 150%;
+  margin-top: 35px;
+}
+
+.best__slider-title {
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 130%;
+}
+
+.galery {
+  text-align: center;
+}
+
+.galery p {
+  max-width: 609px;
+  margin: 20px auto 60px;
+}
+
+.galery__box {
+  display: -ms-grid;
+  display: grid;
+  grid-gap: 30px;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: ([row] 35px)[5];
+      grid-template-rows: repeat(5, [row] 35px);
+}
+
+.galery__box-item {
+  padding: 0;
+  margin: 0;
+}
+
+.galery__box-item:nth-child(4) {
+  grid-row: row 6 / row 8;
+}
+
+.galery__box-item:nth-child(5) {
+  grid-row: row 5 / row 8;
+}
+
+.galery__box-item:nth-child(6) {
+  grid-row: row 6 / row 8;
+}
+
+.galery a {
+  display: block;
+  max-width: 460px;
+  padding: 15px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #ff4b32;
+  margin: 60px auto 140px;
+}
+
+.contacts {
+  background-color: #000;
+  color: #fff;
+  text-align: center;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.contacts span {
+  color: #ff4b32;
+  padding-bottom: 25px;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 150%;
+  display: inline-block;
+  position: relative;
+}
+
+.contacts span::after {
+  content: "";
+  width: 95px;
+  height: 2px;
+  background-color: #ff4b32;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+.contacts h2 {
+  width: 620px;
+  margin: 40px auto 60px;
+}
+
+.contacts a {
+  display: inline-block;
+  font-size: 24px;
+  line-height: 150%;
+}
+
+.contacts__phone {
+  position: relative;
+  padding-left: 39px;
+}
+
+.contacts__phone::before {
+  content: '';
+  position: absolute;
+  width: 24px;
+  height: 24px;
+  left: 0;
+  top: 5px;
+  background-image: url(../images/telephone.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts__email {
+  position: relative;
+  padding-left: 33px;
+  margin-top: 25px;
+}
+
+.contacts__email::before {
+  content: '';
+  position: absolute;
+  width: 17px;
+  height: 14px;
+  left: 0;
+  top: 13px;
+  background-image: url(../images/gmail.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.contacts__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contacts__social li {
+  margin: 30px 20px 0;
+  -webkit-transition: all .3s;
+  transition: all .3s;
+}
+
+.contacts__social li:hover {
+  opacity: .5;
 }
 /*# sourceMappingURL=style.css.map */
